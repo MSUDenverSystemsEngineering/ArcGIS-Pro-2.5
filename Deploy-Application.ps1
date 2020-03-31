@@ -162,7 +162,7 @@ Try {
 		[string]$installPhase = 'Pre-Uninstallation'
 
 		## Show Welcome Message, close Internet Explorer with a 60 second countdown before automatically closing
-		Show-InstallationWelcome -CloseApps 'arcmap, arcglobe, arcscene, arcgisadmin, arccatalog' -CloseAppsCountdown 60
+		Show-InstallationWelcome -CloseApps 'arcmap, arcglobe, arcscene, arcgisadmin, arccatalog, arcgiscleanup, arcgispro' -CloseAppsCountdown 60
 
 		## Show Progress Message (with the default message)
 		Show-InstallationProgress
