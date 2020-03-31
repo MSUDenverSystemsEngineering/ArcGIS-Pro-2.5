@@ -182,7 +182,7 @@ Try {
 		}
 
 		# <Perform Uninstallation tasks here>
-		Execute-MSI -Action Uninstall -Path '{0D695F82-EB12-4430-A241-20226042FD40}'
+		Execute-MSI -Action Uninstall -Path '{0D695F82-EB12-4430-A241-20226042FD40}' -Parameters '/qn'
 
 		##*===============================================
 		##* POST-UNINSTALLATION
