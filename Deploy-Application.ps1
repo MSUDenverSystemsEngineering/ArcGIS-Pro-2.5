@@ -139,7 +139,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		$exitCode = Execute-Process -Path "$dirFiles\ArcGISPro_25_172639" -Parameters "ALLUSERS=1 ESRI_LICENSE_HOST=VMWAS22.WINAD.MSUDENVER.EDU SOFTWARE_CLASS=Professional AUTHORIZATION_TYPE=CONCURRENT_USE INSTALLDIR="C:\MyArcGISPro\ ENABLEEUEI=0 /qn" -WindowStyle 'Hidden' -PassThru
+		$exitCode = Execute-Process -Path "$dirFiles\ArcGISPro_25_172639" -Parameters "ALLUSERS=1 ESRI_LICENSE_HOST=VMWAS22.WINAD.MSUDENVER.EDU SOFTWARE_CLASS=Professional AUTHORIZATION_TYPE=CONCURRENT_USE INSTALLDIR='C:\MyArcGISPro\' ENABLEEUEI=0 /qn" -WindowStyle 'Hidden' -PassThru
 		If (($exitCode.ExitCode -ne "0") -and ($mainExitCode -ne "3010")) { $mainExitCode = $exitCode.ExitCode }
 
 		##*===============================================
